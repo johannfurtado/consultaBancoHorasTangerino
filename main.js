@@ -8,7 +8,7 @@ document.querySelectorAll("[style*='color:red']").forEach((e) => {
     const horas = parseInt(partes[0], 10);
     const minutos = parseInt(partes[1], 10);
 
-    // Excluir caso especial (hora -6 e minutos 28)
+    // Excluir caso especial (Seu ponto corrente do dia. Exemplo: -6:28)
     if (!(horas === -6 && minutos === 28)) {
         horasNegativas += Math.abs(horas); // Converter para positivo
         minutosNegativos += Math.abs(minutos); // Converter para positivo
